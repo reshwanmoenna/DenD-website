@@ -997,6 +997,7 @@
     justify-content: center;
     }
 
+
     /* Zorg dat pagination en knoppen onder elkaar en gecentreerd staan */
     .swiper-nav-wrapper {
     display: flex;
@@ -1012,6 +1013,48 @@
     .swiper-pagination {
     position: static !important;
     }
+        /* ✅ Styling voor Projecten swiper */
+#projects .swiper {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9); /* lichtgroene achtergrond */
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 15px rgba(46,125,50,0.15);
+    max-width: 1000px;
+    margin: 0 auto; /* centreren */
+}
+
+#projects .project-container {
+    background: #fff;
+    border: 2px solid #2e7d32;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(46,125,50,0.1);
+}
+
+#projects .swiper-pagination-bullet {
+    background: #2e7d32 !important;
+    opacity: 0.6;
+}
+
+#projects .swiper-pagination-bullet-active {
+    background: #1b5e20 !important;
+    opacity: 1;
+}
+
+#projects .swiper-button-next,
+#projects .swiper-button-prev {
+    color: #2e7d32 !important;
+    font-weight: bold;
+    transform: scale(0.9); /* iets kleiner maken */
+    transition: transform 0.2s;
+}
+
+#projects .swiper-button-next:hover,
+#projects .swiper-button-prev:hover {
+    transform: scale(1.1);
+    color: #1b5e20 !important;
+}
+
 
     </style>
 </head>
