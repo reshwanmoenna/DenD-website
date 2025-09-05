@@ -1046,7 +1046,15 @@
     color: #2e7d32 !important;
     font-weight: bold;
     transform: scale(0.5); /* iets kleiner maken */
+    transition: none !important; /* geen animatie */
 }
+
+/* Voorkom dat knop groter wordt bij hover */
+#projects .swiper-button-next:hover,
+#projects .swiper-button-prev:hover {
+    transform: scale(0.5) !important;
+}
+
 
 
     </style>
@@ -1645,6 +1653,7 @@
 </script>
 </body>
 </html>
+
 
 
 
