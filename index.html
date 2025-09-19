@@ -1054,9 +1054,56 @@
 #projects .swiper-button-prev:hover {
     transform: scale(0.5) !important;
 }
+        /* Styling voor de Over Ons-informatiekaarten */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Standaard 1 kolom voor mobiel */
+    gap: 25px;
+    margin-top: 20px;
+}
 
+.info-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #2e7d32;
+    transition: all 0.3s;
+}
 
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(46, 125, 50, 0.15);
+}
 
+.info-card h3 {
+    font-size: 1.5rem;
+    color: #2e7d32;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.info-card p, .info-card ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.info-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.info-card ul li {
+    margin-bottom: 8px;
+}
+
+/* Opmaak voor 2 kolommen op grotere schermen */
+@media (min-width: 992px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
     </style>
 </head>
 <body>
@@ -1128,7 +1175,7 @@
                     <i class="fas fa-users"></i>
                 </div>
                 <h3>Ervaring</h3>
-                <p>Ons team heeft jarenlange ervaring in de bouw en civiele techniek.</p>
+                <p>Ons team heeft jarenlande ervaring in de bouw en civiele techniek.</p>
             </div>
         </div>
     </div>
@@ -1179,26 +1226,75 @@
     <!-- Over ons tab -->
     <div id="about" class="tab-content">
         <div class="section-title">
-            <h2>Over Ons</h2>
+            <h2>Over D&D N.V.</h2>
         </div>
 
-        <div class="about-content">
+        <div class="about-content" style="margin-bottom: 40px;">
             <div class="about-text">
-                <h3 class="company-name">Bouw- en Civieltechnische Werken D&D N.V.</h3>
-                <p>Bouw- en Civieltechnische Werken D&D N.V. is uw betrouwbare partner met jaren ervaring in bouw- en civieltechnische projecten. Wij leveren kwaliteit en duurzame oplossingen met oog voor detail.</p>
-                <p>Onze diensten omvatten:</p>
-                <ul>
-                    <li>Levering van diverse zandsoorten</li>
-                    <li>Verhuur van trucks, graafmachines en tractoren</li>
-                    <li>Uitgraven en opvullen van funderingen</li>
-                    <li>Ontbossing van terreinen</li>
-                    <li>Uitvoering van verkavelingsprojecten</li>
-                </ul>
-                <p>Met ons ervaren team en moderne techniek realiseren wij uw project efficiënt en duurzaam.</p>
+                <h3 class="company-name">Uw Betrouwbare Partner Sinds 2013</h3>
+                <p>D&D N.V. Bouw- en Civieltechnische Werken is uw partner met jarenlange ervaring in een breed scala aan bouw- en civieltechnische projecten. Sinds onze oprichting hebben we ons toegelegd op het leveren van superieure kwaliteit en duurzame oplossingen. Ons bedrijf is gebouwd op een fundament van expertise, integriteit en een onwrikbare toewijding aan klanttevredenheid.</p>
             </div>
-
             <div class="about-image">
                 <img src="img/kantoor.jpeg" alt="Bedrijfskantoor van D&D N.V.">
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Onze Geschiedenis</h3>
+                <p>D&D N.V. werd opgericht in 2013 met de ambitie om een toonaangevende speler te worden in de sector. We zijn begonnen met een klein, toegewijd team en een focus op lokale projecten. Door te investeren in ons machinepark en personeel zijn we gestaag gegroeid en nemen we nu ook grotere, complexe projecten aan.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Missie & Visie</h3>
+                <p><strong>Missie:</strong> Het leveren van hoogwaardige en duurzame projecten door middel van expertise en innovatie, waarbij de wens van de klant centraal staat.</p>
+                <p><strong>Visie:</strong> De meest vertrouwde en toonaangevende partner in de sector zijn, bekend om onze bijdrage aan duurzame en toekomstbestendige infrastructuur.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Onze Diensten</h3>
+                <p>Wij bieden een uitgebreid pakket aan diensten, uitgevoerd met modern en goed onderhouden materieel:</p>
+                <ul>
+                    <li>Levering van diverse zandsoorten</li>
+                    <li>Verhuur van trucks, tractoren en graafmachines</li>
+                    <li>Uitgraven en opvullen van funderingen</li>
+                    <li>Ontbossing en bouwrijp maken van terreinen</li>
+                    <li>Uitvoering van complete verkavelingsprojecten</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>Waarom Kiezen Voor Ons?</h3>
+                <p>Wij onderscheiden ons door:</p>
+                <ul>
+                    <li><strong>Ervaring & Expertise:</strong> Meer dan een decennium aan kennis.</li>
+                    <li><strong>Kwaliteit & Duurzaamheid:</strong> Gebruik van hoogwaardige materialen.</li>
+                    <li><strong>Modern Wagenpark:</strong> Garantie voor efficiëntie en betrouwbaarheid.</li>
+                    <li><strong>Klantgerichte Aanpak:</strong> Uw tevredenheid is onze drijfveer.</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>Onze Aanpak</h3>
+                <p>Ons gestructureerde proces zorgt voor een soepele uitvoering:</p>
+                <ol>
+                    <li><strong>Consultatie & Planning:</strong> Grondige analyse en een transparante offerte.</li>
+                    <li><strong>Projectuitvoering:</strong> Efficiënt en veilig met moderne apparatuur.</li>
+                    <li><strong>Kwaliteitscontrole:</strong> Continue controle om de hoogste normen te garanderen.</li>
+                    <li><strong>Oplevering & Nazorg:</strong> Op tijd, binnen budget en met ondersteuning achteraf.</li>
+                </ol>
+            </div>
+
+            <div class="info-card">
+                <h3>Onze Kernwaarden</h3>
+                <p>Onze waarden vormen de basis van onze bedrijfscultuur:</p>
+                <ul>
+                    <li>Kwaliteit</li>
+                    <li>Integriteit</li>
+                    <li>Duurzaamheid</li>
+                    <li>Innovatie</li>
+                    <li>Veiligheid</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -1377,7 +1473,7 @@
                     <p><i class="fas fa-location"></i> Adres: Wayamboweg #65, Saramacca</p>
                     <p><i class="fas fa-phone"></i> Telefoon: +597 335847</p>
                     <p><i class="fas fa-envelope"></i> Email: bouwcivielewerken@gmail.com</p>
-                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +597 8642050 / 8863470</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +597 8642050</p>
                     <p><i class="fas fa-clock"></i> Openingstijden: Ma-Za 7:00-17:00</p>
                     <p><i class="fab fa-facebook"></i>
                         <a href="https://www.facebook.com/profile.php?id=100063636426705" target="_blank">
@@ -1484,7 +1580,7 @@
                     <li><i class="fas fa-map-marker-alt"></i> Wayamboweg #65, Saramacca</li>
                     <li><i class="fas fa-phone"></i> +597 335847</li>
                     <li><i class="fas fa-envelope"></i> bouwcivielewerken@gmail.com</li>
-                    <li><i class="fab fa-whatsapp"></i> +597 8642050 / 8863470</li>
+                    <li><i class="fab fa-whatsapp"></i> +597 8642050</li>
                 </ul>
             </div>
         </div>
@@ -1641,4 +1737,3 @@
 </script>
 </body>
 </html>
-
