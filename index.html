@@ -1104,6 +1104,47 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+        /* Styling voor Media Sectie */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.media-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+  border-left: 5px solid transparent;
+}
+
+.media-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(46,125,50,0.15);
+  border-left-color: #2e7d32;
+}
+
+.video-container {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
     </style>
 </head>
 <body>
@@ -1130,6 +1171,7 @@
                 <li><a href="#" data-tab="sand">Zandsoorten</a></li>
                 <li><a href="#" data-tab="Waste">Opruiming</a></li>
                 <li><a href="#" data-tab="projects">Projecten</a></li>
+                <li><a href="#" data-tab="media">Media</a></li>
                 <li><a href="#" data-tab="contact">Contact</a></li>
             </ul>
         </nav>
@@ -1218,6 +1260,44 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 👇Media tab -->
+    <div id="media" class="tab-content">
+        <div class="section-title">
+            <h2>Onze Media</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem;">Bekijk hieronder een selectie van video's van onze werkzaamheden.</p>
+
+        <div class="media-grid">
+
+            <div class="media-card">
+                <div class="video-container">
+                    <video controls>
+                        <source src="video/vid D&D.mp4" type="video/mp4">
+                        Uw browser ondersteunt deze video niet.
+                    </video>
+                </div>
+            </div>
+
+            <div class="media-card">
+                <div class="video-container">
+                    <video controls>
+                        <source src="video/vidD&D2.mp4" type="video/mp4">
+                        Uw browser ondersteunt deze video niet.
+                    </video>
+                </div>
+            </div>
+
+            <div class="media-card">
+                <div class="video-container">
+                    <video controls>
+                        <source src="video/vidD&D3.mp4" type="video/mp4">
+                        Uw browser ondersteunt deze video niet.
+                    </video>
+                </div>
             </div>
 
         </div>
@@ -1571,6 +1651,8 @@
                     <li><a href="#" data-tab="services">Diensten</a></li>
                     <li><a href="#" data-tab="sand">Zandsoorten</a></li>
                     <li><a href="#" data-tab="Waste">Opruiming</a></li>
+                    <li><a href="#" data-tab="projects">Projecten</a></li>
+                    <li><a href="#" data-tab="media">Media</a></li>
                     <li><a href="#" data-tab="contact">Contact</a></li>
                 </ul>
             </div>
